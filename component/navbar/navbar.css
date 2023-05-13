@@ -1,0 +1,52 @@
+/* navbar.css */
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.logo img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 5px;
+  margin-left: 0%;
+}
+
+.nav-links {
+	margin-left: 15px;
+}
+
+.nav-link {
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown .nav-link {
+	padding-bottom: 2px;
+}
+
+.dropdown-menu {
+	display: block;
+	margin-left: 12px;
+}
+
+.dropdown-nav-link {
+	font-size: 14px;
+	text-decoration: none;
+	color: #666;
+}
