@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/page.css">
-  <link rel="stylesheet" href="component/navbar/navbar.css">
-  <link rel="stylesheet" href="component/slider/slider.css">
-</head>
-<body>
-  <div id="navbar-container"></div>
-  <div id="main-container">
-    <!-- 页面主要内容 -->
-    <div class="page-tile">Home</div>
-    <div class="flex-container">
-      <div id="slideshow-container" class="slideshow-container">
-        <div class="slideshow">
-          <div class="slide">
-            <div class="img-container">
-              <img src="test.jpg" alt="Image 1">
-              <div class="caption">Caption 1</div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="img-container">
-              <img src="test2.jpg" alt="Image 2">
-              <div class="caption">Caption 2</div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="img-container">
-              <img src="test2.jpg" alt="Image 3">
-              <div class="caption">Caption 3</div>
-            </div>
-          </div>
-        </div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-      </div>
-    </div>
-  </div>
-  <script src="component/navbar/navbar.js"></script>
-  <script src="component/slider/slider.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" href="css/page.css">
+		<link rel="stylesheet" href="css/arrow.css">
+		<link rel="stylesheet" href="component/navbar/navbar.css">
+		<link rel="stylesheet" href="component/slider/slider.css">
+		<link rel="stylesheet" href="component/slicing/slicing.css">
+		<style>
+			html,
+			body {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="navbar-container"></div>
+		<div id="main-container">
+			<!-- 页面主要内容 -->
+			<div class="home-pic">
+				<img src="https://joeleephotogallary.oss-cn-beijing.aliyuncs.com/Home/_DSC0202.jpg" />
+			</div>
+			<div class="text-box">
+				<div id="container">
+					<div id="container">
+						<span>To &nbsp</span>
+						<span>Love&nbsp</span>
+						<span> & </span>
+						<span>&nbspTo&nbsp</span>
+						<span>Live</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="arrow-container">
+			<a id="arrow-icon" href="year_2021.html">
+				<img src="images/arrow.svg">
+			</a>
+		</div>
+		
+		<script src="component/navbar/navbar.js"></script>
+	</body>
 </html>
