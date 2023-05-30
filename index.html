@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Home</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/page.css">
-		<link rel="stylesheet" href="css/arrow.css">
 		<link rel="stylesheet" href="component/navbar/navbar.css">
 		<link rel="stylesheet" href="component/slider/slider.css">
 		<link rel="stylesheet" href="component/slicing/slicing.css">
@@ -12,34 +12,96 @@
 			html,
 			body {
 				margin: 0;
+				font-family: 'Times New Roman', Times, serif;
+			}
+
+			.active {
+				text-decoration: none;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="navbar-container"></div>
-		<div id="main-container">
-			<!-- 页面主要内容 -->
-			<div class="home-pic">
-				<img src="https://joeleephotogallary.oss-cn-beijing.aliyuncs.com/Home/_DSC0202.jpg" />
-			</div>
-			<div class="text-box">
-				<div id="container">
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="https://joeleephotogallary.oss-cn-beijing.aliyuncs.com/Components/logo.png">
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">Year<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="year_2021.html">2021</a></li>
+								<li><a href="year_2022.html">2022</a></li>
+								<li><a href="year_2023.html">2023</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">Travel<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="travel_Gansu.html">Gansu, 2021</a></li>
+								<li><a href="travel_Fujian.html">Fujian, 2022</a></li>
+								<li><a href="travel_Sichuan.html">Sichuan, 2023</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">Others<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="others_Tsinghua.html">Tsinghua</a></li>
+								<li><a href="others_film.html">Film</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">Writings<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="writings_XiNanFiveEpisodes.html">西南五章</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About<span class="sr-only">(current)</span></a></li>
+						<li><a href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col align-self-start">
 					<div id="container">
-						<span>To &nbsp</span>
-						<span>Love&nbsp</span>
-						<span> & </span>
-						<span>&nbspTo&nbsp</span>
-						<span>Live</span>
+					  <span>To &nbsp</span>
+					  <span>Love&nbsp</span>
+					  <span> & </span>
+					  <span>&nbspTo&nbsp</span>
+					  <span>Live</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="arrow-container">
-			<a id="arrow-icon" href="year_2021.html">
-				<img src="images/arrow.svg">
-			</a>
-		</div>
-		
-		<script src="component/navbar/navbar.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+			integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+		</script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+			integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+		</script>
+		<script src="component/slider/slider.js"></script>
 	</body>
 </html>
